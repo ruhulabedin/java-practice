@@ -63,7 +63,11 @@ public class Employee {
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
-		return super.hashCode();
+		int hash = 3;
+		hash = 7 * hash + this.firstname.hashCode();
+		hash = 7 * hash + this.lastname.hashCode();
+		hash = 7 * hash + this.email.hashCode();
+		return hash;
 	}
+
 }
